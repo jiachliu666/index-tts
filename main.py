@@ -47,9 +47,10 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 示例用法:
-  python main.py -s examples/lbw.m4a -t "你好，世界！" -o output.wav
-  python main.py --spk examples/lbw.m4a --text "测试文本" --output result.wav
-  python main.py -s examples/lbw.m4a -f input.txt -o output.wav
+  source ./venv/bin/activate
+  uv run main.py -s examples/lbw.m4a -t "你好，世界！" -o output.wav
+  uv run main.py --spk examples/lbw.m4a --text "测试文本" --output result.wav
+  uv run main.py -s examples/lbw.m4a -f input.txt -o output.wav
         """,
     )
 
